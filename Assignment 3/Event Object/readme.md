@@ -1,20 +1,20 @@
-#Action Event Class
+# Action Event Class
 1. An Action Event is generated when:
 -a button is pressed.
 -a list item is double clicked.
 -menu item is clicked.
 
-#Constructor
-```bash ActionEvent(Object src, int type, String cmd) ```
-```bash ActionEvent(Object src, int type, String cmd, int modifiers) ```
-```bash ActionEvent(Object src, int type, String cmd, long when, int modifiers)```
+# Constructor
+``` ActionEvent(Object src, int type, String cmd) ```
+``` ActionEvent(Object src, int type, String cmd, int modifiers) ```
+``` ActionEvent(Object src, int type, String cmd, long when, int modifiers)```
 
 Here,
->src = reference to the object that generated this event.
->type = Determine type of event
->cmd = command string
->modifier = indicates modifier keys (ALT, CTRL, SHIFT); values are ALT_MASK, CTRL_MASK, SHIFT_MASK
->when = specifies when the event occured
+```src``` = reference to the object that generated this event.
+```type``` = Determine type of event
+```cmd``` = command string
+```modifier``` = indicates modifier keys (ALT, CTRL, SHIFT); values are ALT_MASK, CTRL_MASK, SHIFT_MASK
+```when``` = specifies when the event occured
 
 -You can obtain the command name for the envoking ActionEvent object by using: String getActionCommand()
 For eg:
@@ -23,18 +23,18 @@ For eg:
 
 -Other Methods :
 
-```bash int getModifier()```
-```bash long getWhen()```
+``` int getModifier()```
+``` long getWhen()```
 
 #KeyEvent Class
 -It is generated when:
     -Keyboard input occurs
 #Types of KeyEvent
-1.```bash KEY_PRESSED``` - generated when key is pressed.
-2.```bash KEY_RELEASED``` - generated when key is released.
-3.```bash KEY_TYPED``` - generated when key is generated.
+1.``` KEY_PRESSED``` - generated when key is pressed.
+2.``` KEY_RELEASED``` - generated when key is released.
+3.``` KEY_TYPED``` - generated when key is generated.
 
-#Mouse Event
+# Mouse Event
 -There are eight types of mouse events:
 -Eight integer constants are defined to determine types:
 
