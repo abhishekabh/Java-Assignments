@@ -1,7 +1,7 @@
 //java program to draw house using awt....
 import java.awt.*;
-class CanvesOne{
-    CanvesOne() {
+class DrawHouse{
+    DrawHouse() {
         Frame f= new Frame("Canvas Prac");
         Canvas canvas = new MyCanvas();
         f.add(canvas);
@@ -11,7 +11,7 @@ class CanvesOne{
 
     }
     public static void main(String args[]){
-        new CanvesOne();
+        new DrawHouse();
     }
 }
 class MyCanvas extends Canvas{
